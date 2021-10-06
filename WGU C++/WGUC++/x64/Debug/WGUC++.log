@@ -1,0 +1,13 @@
+﻿  main.cpp
+  roster.cpp
+C:\Users\heych\Desktop\WGU Class\WGUC++\WGUC++\WGUC++\roster.cpp(3,26): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\heych\Desktop\WGU Class\WGUC++\WGUC++\WGUC++\roster.cpp(7,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\heych\Desktop\WGU Class\WGUC++\WGUC++\WGUC++\roster.cpp(11,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\heych\Desktop\WGU Class\WGUC++\WGUC++\WGUC++\roster.cpp(15,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\heych\Desktop\WGU Class\WGUC++\WGUC++\WGUC++\roster.cpp(19,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\heych\Desktop\WGU Class\WGUC++\WGUC++\WGUC++\roster.cpp(23,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\heych\Desktop\WGU Class\WGUC++\WGUC++\WGUC++\roster.cpp(27,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\heych\Desktop\WGU Class\WGUC++\WGUC++\WGUC++\roster.cpp(31,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  student.cpp
+  Generating Code...
+  WGUC++.vcxproj -> C:\Users\heych\Desktop\WGU Class\WGUC++\WGUC++\x64\Debug\WGUC++.exe

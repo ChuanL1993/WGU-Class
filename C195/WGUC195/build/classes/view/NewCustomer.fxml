@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="830.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NewCustomerController">
+   <children>
+      <VBox alignment="CENTER" layoutX="94.0" layoutY="47.0" prefHeight="586.0" prefWidth="517.0">
+         <children>
+            <Label text="New Customer">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <GridPane prefHeight="450.0" prefWidth="517.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="CustomerID" />
+                  <Label text="Name" GridPane.rowIndex="1" />
+                  <Label text="Phone Number" GridPane.rowIndex="2" />
+                  <Label text="Address" GridPane.rowIndex="3" />
+                  <Label text="State/Province" GridPane.rowIndex="4" />
+                  <Label text="Postal Code" GridPane.rowIndex="5" />
+                  <Label text="Country" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <TextField fx:id="custIdTxt" disable="true" GridPane.columnIndex="1" />
+                  <TextField fx:id="nameTxt" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="phoneTxt" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="addressTxt" minWidth="-Infinity" prefHeight="31.0" prefWidth="331.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="postalTxt" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <ComboBox fx:id="stateCBBox" onAction="#onActionState" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <ComboBox fx:id="countryCBBox" disable="true" prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                  <Label text="Edited by" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                  <ComboBox fx:id="userCBBox" prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+               </children>
+            </GridPane>
+            <HBox alignment="BOTTOM_RIGHT" prefHeight="126.0" prefWidth="517.0" spacing="20.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onActionSave" text="Save" />
+                  <Button mnemonicParsing="false" onAction="#onActionCancel" text="Cancel" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="30.0" right="20.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+      <Label fx:id="warningLbl" layoutX="134.0" layoutY="640.0" />
+   </children>
+</AnchorPane>

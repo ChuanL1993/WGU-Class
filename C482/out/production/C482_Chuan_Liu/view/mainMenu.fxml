@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.mainMenuController">
+   <children>
+      <VBox layoutX="33.0" layoutY="49.0" prefHeight="325.0" prefWidth="1133.0">
+         <children>
+            <Label text="Inventory management system">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="271.0" prefWidth="1133.0" spacing="30.0">
+               <children>
+                  <VBox prefHeight="271.0" prefWidth="735.0" style="-fx-border-color: grey; -fx-border-radius: 15;">
+                     <children>
+                        <HBox prefHeight="36.0" prefWidth="568.0">
+                           <children>
+                              <Label prefHeight="26.0" prefWidth="371.0" text="Part">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <TextField />
+                           </children>
+                        </HBox>
+                        <TableView prefHeight="220.0" prefWidth="568.0">
+                          <columns>
+                            <TableColumn prefWidth="116.0" text="C1" />
+                            <TableColumn prefWidth="78.0" text="C2" />
+                              <TableColumn prefWidth="154.0" text="C1" />
+                              <TableColumn prefWidth="219.0" text="C1" />
+                          </columns>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </TableView>
+                        <HBox alignment="BOTTOM_RIGHT" prefHeight="63.0" prefWidth="520.0" spacing="15.0">
+                           <children>
+                              <Button mnemonicParsing="false" text="Add" />
+                              <Button mnemonicParsing="false" text="Modify" />
+                              <Button mnemonicParsing="false" text="Delete" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </padding>
+                  </VBox>
+                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="271.0" prefWidth="735.0" style="-fx-border-color: grey; -fx-border-radius: 15;">
+                     <children>
+                        <HBox prefHeight="36.0" prefWidth="568.0">
+                           <children>
+                              <Label prefHeight="26.0" prefWidth="371.0" text="Part">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <TextField />
+                           </children>
+                        </HBox>
+                        <TableView prefHeight="220.0" prefWidth="568.0">
+                           <columns>
+                              <TableColumn prefWidth="116.0" text="C1" />
+                              <TableColumn prefWidth="78.0" text="C2" />
+                              <TableColumn prefWidth="154.0" text="C1" />
+                              <TableColumn prefWidth="219.0" text="C1" />
+                           </columns>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </TableView>
+                        <HBox alignment="BOTTOM_RIGHT" prefHeight="63.0" prefWidth="520.0" spacing="15.0">
+                           <children>
+                              <Button mnemonicParsing="false" text="Add" />
+                              <Button mnemonicParsing="false" text="Modify" />
+                              <Button mnemonicParsing="false" text="Delete" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </HBox>
+            <VBox alignment="BOTTOM_RIGHT" prefHeight="76.0" prefWidth="1133.0">
+               <children>
+                  <Button mnemonicParsing="false" text="Exit" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
